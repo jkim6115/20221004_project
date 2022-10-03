@@ -87,6 +87,16 @@
   font-size: 11px;
   padding-right: 20px;
 }
+
+.login-form-left-side .login-top-wrap span a {
+  text-decoration: none;
+  color: gray;
+}
+
+.login-form-left-side .login-top-wrap span a:hover {
+  text-decoration: underline;
+}
+
 .login-form-left-side .login-top-wrap .create-account-btn {
   background: white;
   border: 0;
@@ -95,7 +105,16 @@
   font-size: 11px;
   color: #2178ff;
   border-radius: 3px;
+
+  transition: all 0.2s;
 }
+
+.login-form-left-side .login-top-wrap .create-account-btn:hover {
+  cursor: pointer;
+  background-color: #2178ff;
+  color: white;
+}
+
 .login-input-container {
   padding-top: 120px;
   width: 300px;
@@ -106,7 +125,10 @@
   margin-top: 20px;
   border-radius: 2px;
   border-bottom: solid 2px #2178ff;
+
+  transition: all 0.2s;
 }
+
 .login-input-container .login-input-wrap i {
   color: #2178ff;
   line-height: 45px;
@@ -138,6 +160,13 @@
 
   background: rgb(105, 163, 255);
   background: linear-gradient(162deg, rgba(105, 163, 255, 1) 0%, rgba(43, 125, 254, 1) 50%, rgba(43, 125, 254, 1) 100%);
+
+  transition: all 0.2s;
+}
+
+.login-btn-wrap .login-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .login-btn-wrap a {
@@ -145,10 +174,6 @@
   text-decoration: none;
   font-size: 11px;
   color: gray;
-}
-
-.login-btn-wrap input:hover {
-  cursor: pointer;
 }
 
 #greeting {
