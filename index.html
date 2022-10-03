@@ -7,16 +7,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/login.js"></script>
+    <script src="https://kit.fontawesome.com/51db22a717.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input required maxlength="15" type="text" id="username" placeholder="Username" />
-      <input required maxlength="18" type="text" id="password" placeholder="Password" />
-      <input type="submit" value="submit" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <div id="links" class="hidden">
-      <a href="#">Forgot Password?</a>
+    <div class="page-container">
+      <div class="login-form-container shadow">
+        <div class="login-form-right-side">
+          <div class="top-logo-wrap"></div>
+          <h1>How does a login system work?</h1>
+          <p>
+            In computer security, logging in is the process by which an individual gains access to a computer system by
+            identifying and authenticating themselves.
+          </p>
+        </div>
+        <div class="login-form-left-side">
+          <div class="login-top-wrap">
+            <span>Don't have an account?</span>
+            <button class="create-account-btn shadow-light">Create Profile</button>
+          </div>
+          <form id="login-form" class="hidden">
+            <div class="login-input-container">
+              <div class="login-input-wrap input-id">
+                <i class="far fa-user"></i>
+                <input required maxlength="15" type="text" id="username" placeholder="Username" autocomplete="off" />
+              </div>
+              <div class="login-input-wrap input-password">
+                <i class="fas fa-key"></i>
+                <input
+                  required
+                  maxlength="18"
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <div class="login-btn-wrap">
+              <input type="submit" value="Login" class="login-btn" />
+              <a href="#">Forgot password?</a>
+            </div>
+          </form>
+          <h1 id="greeting" class="hidden"></h1>
+        </div>
+      </div>
     </div>
   </body>
 </html>

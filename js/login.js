@@ -2,7 +2,6 @@ const loginInputId = document.querySelector("#username");
 const loginInputPassword = document.querySelector("#password");
 const loginForm = document.querySelector("#login-form");
 const greeting = document.querySelector("#greeting");
-const links = document.querySelector("#links");
 
 const CLASSNAME_HIDDEN = "hidden";
 const IOGININPUT_KEY = "loginInput";
@@ -18,7 +17,6 @@ function loginSubmit(event) {
     passwd: password,
   };
   loginForm.classList.add(CLASSNAME_HIDDEN);
-  links.classList.add(CLASSNAME_HIDDEN);
   localStorage.setItem(IOGININPUT_KEY, JSON.stringify(loginInput));
   paintGreetings(loginInput);
 }
@@ -37,7 +35,6 @@ const parsedLoginInput = JSON.parse(savedLoginInput);
 //localStorage에 저장된 값이 없으면 로그인창을, 있으면 환영합니다 창을 띄움
 if (parsedLoginInput === null) {
   loginForm.classList.remove(CLASSNAME_HIDDEN);
-  links.classList.remove(CLASSNAME_HIDDEN);
   loginForm.addEventListener("submit", loginSubmit);
 } else {
   paintGreetings(parsedLoginInput);
